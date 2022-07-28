@@ -35,4 +35,5 @@ def predict():
     return render_template('index.html', prediction_text='Regression Model  has predicted Price for given SqFt Area is : {}'.format(prediction))
 
 
-app.run()
+if __name__ == "__main__":
+  app.run(debug = True)
